@@ -1,0 +1,29 @@
+$black: #09171B;
+$ocean: #3CCBDA;
+$grey: #4B4B4B;
+$main-grey: #DCE3EB;
+$light-grey: #F1F5FA;
+$icon-grey: #858D95;
+$white: #fff;
+
+
+%mon400 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%mon500 {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%mon600 {
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-weight: 600;
+}
+
+%bcg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

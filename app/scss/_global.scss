@@ -1,0 +1,72 @@
+body {
+    background-color: #fff;
+    color: $black;
+    font-size: 16px;
+    line-height: 1.5;
+    @extend %mon400;
+}
+
+.container,
+.container-sl,
+.container-xl,
+.container-s {
+    max-width: 1135px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.container-s {
+    max-width: 962px;
+    overflow: hidden;
+}
+
+.container-m {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.container-sl {
+    max-width: 1190px;
+}
+
+.container-xl {
+    max-width: 1920px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.btn-reg {
+    width: 185px;
+    height: 40px;
+    background-color: $ocean;
+    outline: transparent;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    font-size: 16px;
+    @extend %mon500;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #1e1e1e;
+    }
+}
+
+.disabled {
+    display: none !important;
+}
+
+.disabled {
+    display: none;
+}
+
+.active_btn {
+    border-color: $ocean !important;
+    color: $ocean !important;
+}
