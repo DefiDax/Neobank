@@ -1,4 +1,13 @@
 $(function(){
+
+
+    $('.form__tel').mask('+38(999) 999-99-99').on('click', function () {
+        if ($(this).val() === '__ (___) ___-__-__') {
+            $(this).get(2).setSelectionRange(0, 0);
+        }
+    });
+
+
     $('.btn-reg, .footer__logo').on('click', function (e) {
         e.preventDefault();
         const id  = $(this).attr('href'),
