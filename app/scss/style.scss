@@ -233,7 +233,7 @@
             font-size: 14px;
             color: $icon-grey;
         }
-        
+
         &:focus,
         &:hover {
             border-color: $ocean;
@@ -304,6 +304,7 @@
     background-color: $light-grey;
     padding: 80px 0 120px;
     text-align: center;
+    position: relative;
 
 
     &__title {
@@ -326,13 +327,44 @@
     }
 
     &__wrapper {
+        overflow-y: auto;
         margin-bottom: 60px;
+
+        &::-webkit-scrollbar {
+            height: 6px;
+        }
+
+
+        &::-webkit-scrollbar-track {
+            background: rgb(241, 235, 235);
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background: #dddbdb;
+            border-radius: 10px;
+        }
     }
 
     &__mobile,
     &__desctop {
         display: flex;
         align-items: center;
+    }
+
+    &__item_desctop {
+        padding: 16px 16px 16px 52px;
+        min-height: 290px;
+        min-width: 217px;
+        min-height: 100%;
+        margin: 0 8px;
+
+        &:last-child {
+            margin-right: 8px;
+        }
+
+        &:first-child {
+            margin-left: 8px;
+        }
     }
 
     &__button {
@@ -382,6 +414,22 @@
         position: relative;
     }
 
+    
+
+    &__background_desctop {
+        position: absolute;
+        left: 50%;
+        width: 565px;
+        height: 320px;
+        top: 245px;
+        transform: translate(-333px);
+    }
+
+    &__wrapper_desc {
+        margin-top: 365px;
+        margin-bottom: 50px;
+    }
+
     &__item-title {
         font-size: 15px;
         @extend %mon600;
@@ -391,6 +439,8 @@
         color: $icon-grey;
         font-size: 14px;
     }
+
+    
 }
 
 .footer {
