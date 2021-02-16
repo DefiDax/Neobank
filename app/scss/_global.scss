@@ -41,6 +41,7 @@ body {
 }
 
 .btn-reg {
+    display: block;
     width: 185px;
     height: 40px;
     background-color: $ocean;
@@ -52,6 +53,7 @@ body {
     @extend %mon500;
     transition: background-color 0.2s ease-in;
     cursor: pointer;
+    margin: 0 auto;
 
     &:hover {
         background-color: #1e1e1e;
@@ -69,4 +71,12 @@ body {
 .active_btn {
     border-color: $ocean !important;
     color: $ocean !important;
+}
+
+
+.btn-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
 }

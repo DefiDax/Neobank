@@ -8,7 +8,7 @@ $(function(){
     });
 
 
-    $('.btn-reg, .footer__logo').on('click', function (e) {
+    $('.btn-reg, .btn-link, .footer__logo').on('click', function (e) {
         e.preventDefault();
         const id  = $(this).attr('href'),
           top = $(id).offset().top;
