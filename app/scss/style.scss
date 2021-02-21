@@ -4,6 +4,7 @@
 @import 'global';
 
 
+
 .header-box {
     padding: 15px 50px;
     display: flex;
@@ -20,6 +21,10 @@
         background-size: cover;
         left: -18px;
         top: 2px;
+    }
+
+    &__dropdown {
+        box-shadow: 0px 4px 12px rgba(143, 146, 153, 0.14);
     }
 
     &__list {
@@ -111,9 +116,9 @@
     &__title {
         @extend %mon600;
         font-size: 48px;
+        line-height: 56px;
         color: $black;
-        max-width: 440px;
-        line-height: 1.2;
+        max-width: 445px;
         margin-bottom: 16px;
         line-clamp: 4;
         text-overflow: ellipsis;
@@ -296,7 +301,10 @@
     }
 
     &__item-txt {
-        max-width: 260px;
+        max-width: 260px; 
+        @extend %mon500;
+        font-weight: 500;
+        color: #09171B;
     }
 }
 
@@ -330,15 +338,20 @@
         overflow-y: auto;
         margin-bottom: 60px;
 
+        & {
+            scrollbar-color:  #dddbdb rgb(241, 235, 235);
+            scrollbar-width: thin;
+        }
+
         &::-webkit-scrollbar {
             height: 6px;
         }
 
-
         &::-webkit-scrollbar-track {
             background: rgb(241, 235, 235);
+            border-radius: 10px;
         }
-        
+
         &::-webkit-scrollbar-thumb {
             background: #dddbdb;
             border-radius: 10px;
@@ -414,7 +427,7 @@
         position: relative;
     }
 
-    
+
 
     &__background_desctop {
         position: absolute;
@@ -440,7 +453,7 @@
         font-size: 14px;
     }
 
-    
+
 }
 
 .footer {

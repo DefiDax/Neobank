@@ -55,6 +55,10 @@ body {
     cursor: pointer;
     margin: 0 auto;
 
+    &_top {
+        float: left;
+    }
+
     &:hover {
         background-color: #1e1e1e;
     }
